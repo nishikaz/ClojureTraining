@@ -38,6 +38,7 @@
 ;; 今回はpiyopiyoの文字列を代入している
 (reset! n "piyopiyo")
 (println @n)
+<<<<<<< HEAD
 
 ;; 関数（メモリ上の関数とポインタを紐づけたやつらしい）
 (defn tabetai [what]
@@ -47,3 +48,5 @@
 ((fn [when] (println (str (tabetai "SUSHI") when))) "この世の終わりには")
 ((fn [when] (println (str (tabetai "SUSHI") when))) "最後の晩餐に")
 
+=======
+>>>>>>> a4b1c93c366fdbb87198188817a0115ba7dcbc5e
