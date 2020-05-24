@@ -42,7 +42,6 @@
 ;; 関数（メモリ上の関数とポインタを紐づけたやつらしい）
 (defn tabetai [what]
     (println (str what "食べたい")))
-(tabetai "SUSHI")
 
 ;; 無名関数（ポインタのない関数らしい）
 ((fn [when] (println (str (tabetai "SUSHI") when))) "この世の終わりには")
