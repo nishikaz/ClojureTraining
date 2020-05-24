@@ -38,13 +38,3 @@
 ;; 今回はpiyopiyoの文字列を代入している
 (reset! n "piyopiyo")
 (println @n)
-
-;; 関数（メモリ上の関数とポインタを紐づけたやつらしい）
-(defn tabetai [what]
-    (println (str what "食べたい")))
-(tabetai "SUSHI")
-
-;; 無名関数（ポインタのない関数らしい）
-((fn [when] (println (str (tabetai "SUSHI") when))) "この世の終わりには")
-((fn [when] (println (str (tabetai "SUSHI") when))) "最後の晩餐に")
-
