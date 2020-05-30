@@ -39,6 +39,10 @@
 (reset! n "piyopiyo")
 (println @n)
 
+;; リスト（マップ）
+(def list-without-index (list 1 2 3 4 5))
+(def list-with-index (map {0 "hoge" 1 "fuga" 2 "piyo"}))
+
 ;; 関数（メモリ上の関数とポインタを紐づけたやつらしい）
 (defn tabetai [what]
     (println (str what "食べたい")))
